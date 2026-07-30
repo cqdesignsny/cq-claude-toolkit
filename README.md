@@ -11,7 +11,7 @@ marketplace**, which is the mechanism that actually moves a skill between comput
 In Claude Code, run:
 
 ```
-/plugin marketplace add cqdesignsny/cq-claude-toolkit
+/plugin marketplace add https://github.com/cqdesignsny/cq-claude-toolkit.git
 ```
 
 ```
@@ -19,6 +19,17 @@ In Claude Code, run:
 ```
 
 Restart Claude Code. `/cq:startup` will appear in the slash command list.
+
+Use the full `https://` URL, not the `cqdesignsny/cq-claude-toolkit` shorthand. The shorthand
+makes Claude Code clone over SSH when the machine has an SSH key, which fails for anyone
+whose key is not registered with GitHub. The HTTPS URL works on every machine, with or
+without SSH, because the repo is public.
+
+The same two commands work from a terminal without opening Claude Code:
+
+```
+claude plugin marketplace add https://github.com/cqdesignsny/cq-claude-toolkit.git && claude plugin install cq@cq-toolkit
+```
 
 ## What's in it
 
