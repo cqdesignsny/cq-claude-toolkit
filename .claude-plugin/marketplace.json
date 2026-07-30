@@ -1,7 +1,5 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "cq-toolkit",
-  "description": "Shared Claude Code skills for the CQ Designs NY team",
   "owner": {
     "name": "CQ Designs NY",
     "email": "cqdesignsny@gmail.com"
