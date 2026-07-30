@@ -4,6 +4,9 @@
     "name": "CQ Designs NY",
     "email": "cqdesignsny@gmail.com"
   },
+  "metadata": {
+    "description": "Shared Claude Code skills for the CQ Designs NY team"
+  },
   "plugins": [
     {
       "name": "cq",
